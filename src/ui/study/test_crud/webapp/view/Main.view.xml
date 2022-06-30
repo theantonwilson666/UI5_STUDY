@@ -1,0 +1,30 @@
+<mvc:View controllerName="test_crud.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.f">
+
+    <VBox>
+        <HBox>
+            <Button icon="sap-icon://add"
+                press="addItem"/>
+        </HBox>
+
+        <VBox id="_Messages-List"
+            items="{/messages}">
+            <HBox>
+                <VBox class="sapUiTinyMargin">
+                    <Label text="Сообщение"
+                        design="Bold"/>
+                    <Input value="{Text}"/>
+                </VBox>
+
+                <VBox class="sapUiTinyMargin">
+                    <Label text="Номер"
+                        design="Bold"/>
+                    <Input value="{Number}"/>
+                </VBox>
+            </HBox>
+        </VBox>
+
+    </VBox>
+</mvc:View>
