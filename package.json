@@ -1,0 +1,24 @@
+{
+  "name": "ui5_study",
+  "version": "1.0.0",
+  "description": "UI5_STUDY",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theantonwilson666/UI5_STUDY.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theantonwilson666/UI5_STUDY/issues"
+  },
+  "homepage": "https://github.com/theantonwilson666/UI5_STUDY#readme",
+  "dependencies": {
+    "grunt-connect-proxy": "^0.2.0",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-openui5": "^0.18.3"
+  }
+}

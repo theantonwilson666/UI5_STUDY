@@ -1,0 +1,70 @@
+<mvc:View controllerName="travel_model.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.f">
+
+    <Table id="_Flight-Table"
+        inset="false"
+        items="{
+			path: '/ZSNN_FLIGHTS'
+		}">
+
+        <columns>
+
+            <Column>
+                <Text text="Дата вылета" />
+            </Column>
+
+            <Column>
+                <Text text="Откуда" />
+            </Column>
+
+            <Column>
+                <Text text="Куда" />
+            </Column>
+
+            <Column>
+                <Text text="Класс" />
+            </Column>
+
+            <Column>
+                <Text text="Цена" />
+            </Column>
+
+            <Column>
+                <Text text="Время полета" />
+            </Column>
+
+            <Column>
+                <Text text="Расстояние" />
+            </Column>
+
+            <Column>
+                <Text text="Туроператор" />
+            </Column>
+
+        </columns>
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="{Dateflight}"/>
+                    
+                    <Text text="{Fromplace}"/>
+                    
+                    <Text text="{Toplace}"/>
+                    
+                    <Text text="{Flighttype}"/>
+                    
+                    <Text text="{Price}"/>
+                    
+                    <Text text="{Time}"/>
+                    
+                    <Text text="{Distance}"/>
+
+                    <Text text="{Agency}"/>
+                    
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>
